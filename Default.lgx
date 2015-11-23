@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="Default" SavedBy="CSBCOLLECTIONS\Logi" SavedAt="6/3/2008 3:59:08 PM" EngineVersion="9.0.52" SecurityReportRightID="rManager, rReportDevelopers">
+  <StyleSheet StyleSheet="CSB.css" />
+  <ReportHeader />
+  <Body>
+	<Remark>
+      <Label ID="lblTest" Caption="Test Text to view on GitHub" />
+    </Remark>
+    <Remark>
+      <Label ID="lblRoles" Caption="Roles: @Function.UserRoles~" Class="header" />
+    </Remark>
+    <DataTable ID="dtReports">
+      <DataLayer Type="DefinitionList" DefinitionListFolder="_Reports" ID="dlReportDefinitions">
+        <ConditionFilter Condition="&quot;@Data.Folder1~&quot; &lt;&gt; &quot;Dev&quot;" ID="filterDevFolder" />
+        <ConditionFilter Condition="UCASE(&quot;@Data.DefinitionName~&quot;) &lt;&gt; UCASE(&quot;@Request.rdReport~&quot;)" ID="filterCurrentReport" />
+      </DataLayer>
+      <DataTableColumn ID="colReport" Header="Report">
+        <Label ID="lblReport" Caption="@Data.DefinitionName~">
+          <Action Type="Report" ID="actShowReport">
+            <Target Type="Report" IdeDisplayStatus="Collapsed" Report="@Data.DefinitionName~" />
+          </Action>
+        </Label>
+        <DataColumnSort DataColumn="DefinitionName" />
+      </DataTableColumn>
+      <Remark>
+        <DataTableColumn ID="colFolder" Header="Folder">
+          <Label ID="lblFolder" Caption="@Data.Folder1~" IdeDisplayStatus="Collapsed" />
+          <DataColumnSort />
+        </DataTableColumn>
+      </Remark>
+    </DataTable>
+  </Body>
+  <ReportFooter />
+  <ideTestParams />
+</Report>

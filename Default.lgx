@@ -4,7 +4,7 @@
   <ReportHeader />
   <Body>
 	<Remark>
-      <Label ID="lblTest" Caption="Test Text to view on GitHub" />
+      <Label ID="lblTest" Caption="Test Text to view on GitHub. Change #2 here." />
     </Remark>
     <Remark>
       <Label ID="lblRoles" Caption="Roles: @Function.UserRoles~" Class="header" />

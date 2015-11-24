@@ -1,0 +1,1097 @@
+txbody {
+	background-color: #f5f4f4;
+	ibackground: url(../_Images/FooterBg.gif) no-repeat bottom right;
+	background-attachment: fixed;
+	font-family : sans-serif, Verdana, Arial, Geneva, Helvetica;
+	font-size : 9pt;
+	margin: 0 0 0 0;
+}
+
+th, td {
+   font-family : sans-serif, Verdana, Arial, Geneva, Helvetica;
+	font-size : 9pt;
+}
+
+
+.Main {
+	color: #000000;
+	width: 100%;
+	border-top: 1px Solid #c8c9cb;
+}
+
+.Main2 {
+	background-color:#d4e3ea;
+	width: 100%;
+	border-top: 1px Solid #c8c9cb;
+}
+
+.Report {
+	color: #000000;
+	margin-left: 20px;
+	margin-top: 10px;
+	scrollbar-face-color : #B4B4B4;
+	scrollbar-highlight-color : #FFFFFF;
+	scrollbar-darkshadow-color : #666666;
+	scrollbar-shadow-color : #999999;
+	scrollbar-arrow-color : White;
+	scrollbar-3dlight-color : #999999;	
+	width: 100%;
+}
+
+A:link	{	
+	text-decoration:	none;
+	color: #5c6f7a;
+}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color: #5c6f7a;
+}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#21489e;
+}	
+		
+A:hover	{
+	text-decoration: none;
+	color: #21489e;
+}
+
+IMG 	{
+    border: 0;
+	margin: 0px;
+}
+
+
+.ibutton { 
+  color: #FFFFFF; 
+  background-color: #4a719c;
+  ipadding-left: 11px;
+  ipadding-top: 4px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  height: 24px;
+  border-top: 1px Solid #FFFFFF;
+  border-bottom: 1px Solid #7f7f7f;
+  border-left: 1px Solid #FFFFFF;
+  border-right: 1px Solid #7f7f7f;
+}
+
+.cell {
+	background-color: #FFFFFF;
+	padding-left: 4px;
+	padding-right: 1px;
+	font-size : 8pt;	
+}
+	
+.headerBg {
+	background: #f0803c;
+height: 125px;
+}
+
+.headerBgCSBWebsiteSm {
+	background: url(../_Images/HeaderBgCSBWebsiteSm.jpg); 
+	height: 85px;
+}
+
+.table {
+	border: 1px Solid #8EA6C1;
+	background-color: #888888;
+	font-size: 8pt;
+	margin-top: 6px;
+	margin-left : 3px;
+}
+
+.tableHeader {
+	background-color: #dee5f0;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.tableHeaderSmall {
+	background-color: #dee5f0;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.rows {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	margin-top: 3px;
+	margin-left : 3px;
+	margin-bottom: 3px;
+	text-Align: right;
+}
+
+.clmLeft {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 7pt;
+	padding-top: 2px;
+	padding-left : 2px;
+	padding-bottom: 2px;
+	text-Align: left;
+}
+
+.clmLeft10pt {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding-top: 2px;
+	padding-left : 2px;
+	padding-bottom: 2px;
+	text-Align: left;
+}
+
+.clmLeftTxtGreen {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+	font-weight: bold;
+	color: Green;
+}
+
+.clmRight {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 7pt;
+	padding-top: 2px;
+	padding-right : 2px;
+	padding-bottom: 2px;
+	text-Align: right;
+}
+
+.clmRight8pt {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 2px;
+	padding-left : 2px;
+	padding-bottom: 2px;
+	text-Align: right;
+}
+
+.clmRight10pt {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding-top: 2px;
+	padding-left : 2px;
+	padding-bottom: 2px;
+	text-Align: right;
+}
+
+
+.clmRightTxtGreen {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+	font-weight: bold;
+	color: Green;
+}
+
+.clmCenter {
+	background-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+
+.rowsHeader {
+	background-color: #FFFFFF;
+	padding-left: 5px;
+	padding-right: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.inputGrid {
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 9pt;
+	margin-right : 2px;
+}
+
+.title  {
+               /*background: url(../_Images/TitleBg.jpg);*/
+	       background: #5c6f7a;
+               color: #FFFFFF;
+               font: bold 11pt Verdana, Arial, Geneva, Helvetica, sans-serif;
+               padding-left: 20px;
+               padding-top: 6px;
+               height: 30px;
+               width: 100%;
+               vertical-align: middle;
+}
+
+.titleExport  {
+               font: bold 12pt Verdana, Arial, Geneva, Helvetica, sans-serif;
+               margin-left: 0px;
+               padding-top: 0px;
+               height: 40px;
+               width: 100%;
+					ibackground-color: #1550b6;
+					vertical-align: middle;
+}
+
+.date {
+	background: #FFFFFF;
+	font-size : 8pt;	
+	font-weight: bold;
+	color: #666666;	
+	margin-bottom: 6px;	
+	padding-right: 0pt;
+	padding-top: 9px;
+	height: 32px;	
+	width: 100%;
+	border-bottom: 1px dashed #25405F;
+}
+
+.txtRed A:link{
+	color: red;
+}
+
+
+.txtCondition A:link{
+	background: #FFFFFF;
+	font-weight: bold;
+	color: red;
+	padding-left: 70px;
+	padding-right: 3px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	height: 18px;
+}
+
+.txtBold {
+	font-weight: bold;
+	background-color: #98CB00;
+}
+
+.inputLabel
+{
+    font-family: verdana, ;  
+    color: #4A719C;  
+    font-size: 10pt;
+	 font-weight: bold;
+	 margin-left: 24px;
+}
+
+
+.input
+{
+    font-family: verdana, ;  
+    color: #000000;  
+    font-size: 10pt;
+	 text-align: left;
+	 width: 100px;
+	 padding-left: 2px;
+}
+
+.groupHeader {
+	font-weight: bold;
+	background-color:#dee5f0;
+}
+
+.groupHeaderSilver {
+	font-weight: bold;
+	background-color: Silver;
+}
+
+.sumRowBoldRight{
+	font-weight: bold;
+	background-color:#dee5f0;
+	text-align: right;
+}
+
+.sumRowBoldLeft{
+	font-weight: bold;
+	background-color:#dee5f0;
+	text-align: left;
+}
+
+.altRow {
+	background-color: #eeeeee;
+}
+
+.calendar {
+	margin-left: 4px;
+}
+
+.alignLeft {
+	text-align: left;
+	vertical-align: top;
+}
+
+.alignRight {
+	text-align: right;
+	vertical-align: top;
+}
+
+.alignCenter {
+	vertical-align: middle;
+}
+
+.measureTable {
+               border-top: 2px Solid #cccccc;
+					border-right: 2px Solid #4f78cd;
+					border-bottom: 2px Solid #4f78cd;
+					border-left: 2px Solid #cccccc;
+               background-color: #f1f7eb;
+               margin-left: 22px;            
+}
+.measureTable1 {
+               border-top: 2px Solid #cccccc;
+					border-right: 2px Solid #4f78cd;
+					border-bottom: 2px Solid #4f78cd;
+					border-left: 2px Solid #cccccc;
+               background-color: #f1f7eb;
+               imargin-left: 5px;            
+}
+
+TD.measureTable {      
+               margin: 12 12 12 12;
+}
+
+.measureCaption {
+					color: #363636;
+					font-weight: bold;
+               font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+               font-size: 9pt;
+					margin-left: 5px;
+}
+
+.measure {
+               font-weight: bold;
+               font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+               font-size: 10t;
+               color: #154c87;
+					margin-left: 5px;
+					margin-right: 5px;
+}
+
+/* Start Left Menu */
+
+
+.cellLeftPanel {
+	background-image: url(../_Images/RSSideMenuBgOrg.jpg);
+	ibackground-color: #d1dbed;
+   Height: 900px;
+	border: 1px solid Silver;
+	vertical-align: top;
+	padding-bottom: 10px;
+}	
+
+
+
+.cellRightPanel {
+	display: block;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	border-top: none;
+}
+
+
+#leftnav a span { 
+  background-color: #dee5f0; 
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  
+} 
+
+#leftnav a, #leftnav a span { 
+  display: block; 
+  float: left;
+} 
+
+#leftnav a:hover { 
+  color: #ffffff; 
+  background-color: #dee5f0; 
+  text-decoration: none; 
+  padding-left: 8px;
+} 
+
+#leftnav a:hover span { 
+  background-color: #dee5f0; 
+  padding-right: 8px;
+} 
+
+
+.leftnav a { 
+  color: #fff;
+  background-color: #5c6f7a;
+  background-image: none;
+  text-decoration: none; 
+  padding-left: 11px;
+  padding-top: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  height: 32px;
+  border-top: none;
+  border-bottom: none;
+  display: block;
+}
+
+.leftnav a:hover { 
+  color: #ffffff;
+  background-color: #f0803c;
+
+  text-decoration: none; 
+  padding-left: 11px;
+  cursor: hand;
+  width: auto;
+} 
+
+
+.leftnavSub a { 
+  color: #265890; 
+  background-color: #f5f8fd; 
+  text-decoration: none; 
+  padding-left: 19px;
+  padding-top: 3px;
+  font-family: sans-serif;
+  font-size: 12px;
+  height: 28px;
+  /*width: 100%;*/
+  border-top: 1px Solid #FFFFFF;
+  border-bottom: 1px Solid #7f7f7f;
+  display: block;
+}
+
+
+.leftnavSub a:hover { 
+  color: #FFFFFF; 
+  /*background-color: #2959b5;*/ 
+  background-color: #f0803c;
+  text-decoration: none; 
+  padding-left: 21px;
+  cursor: hand;
+  width: 80%
+}
+
+/* End Left Menu */
+
+
+
+/* Start Footer */
+
+.txtCopyright {
+	/*background: #FFFFFF;*/
+	width: 100%;
+	color: #5c6f7a;
+	text-align: center;
+	margin-left: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: 20px;
+	border: none;
+}
+
+.txtCopyright2 {
+	/*background: #FFFFFF;*/
+	background: #d4e3ea;
+	width: 100%;
+	color: gray;
+	text-align: center;
+	margin-left: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: 20px;
+	border: 1px solid Silver;
+}
+
+/* End Footer */
+
+
+.cellUpdateButton {
+	vertical-align: top;
+	padding-top: 27px;
+	
+}	
+.inputText
+{
+    font-family: verdana, ;   
+    font-size: 10pt;
+	 margin-left: 24px;
+}
+
+.buttons
+{
+	margin-left: 24px;
+	width: 70px;
+}
+
+.buttonssize
+{
+	width: 70px;
+}
+
+.rbBold {
+	font-weight: bold;
+	font-family: verdana, ;  
+   font-size: 10pt;
+	color: #5c6f7a;
+}
+
+.cellTop {
+	vertical-align: top;
+}	
+
+.LeftMargin
+{
+	 margin-left: 20px;
+}
+
+
+.SumRowBold {
+	font-weight: bold;
+}
+
+.txtRestrictedStateRight {
+	background-color: Silver;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+.txtRestrictedStateLeft {
+	background-color: Silver;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+.divWaitMask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+	background-color: White;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+
+.divWait {
+    position: absolute;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+
+.divWaitContent {
+	position: absolute;
+	z-index: 201;
+	top: 45%;
+	iborder: 1px solid #000000;
+	ibackground-color: #000000;
+	opacity: 1.0;
+	padding: 10px 20px 10px 20px;
+}
+
+.Paging {
+	background-color: #FFFFFF;
+}
+
+.subReport {
+	background-color: #FFFFFF;
+	margin-left: 2px;
+	margin-top: 2px;
+	iwidth: 100%;
+}
+
+.subTable {
+	border: 1px Solid #8EA6C1;
+	background-color: #888888;
+	font-size: 8pt;
+	margin-left : 345px;
+	margin-top: 0px;
+	margin-right : 0px;
+	width: 285px;
+}
+
+.subClmLeft {
+	background-color: #ebf2fe;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+
+.subClmRight {
+	background-color: #ebf2fe;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+.subCclmCenter {
+	background-color: #ebf2fe;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: Center;
+}
+
+.subSumRowBold {
+	font-weight: bold;
+	background-color: silver;
+}
+
+TD.subSumRowBold {
+	font-weight: bold;
+	background-color: Gray;
+}
+.clmRightExport {
+	ibackground-color: #FFFFFF;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+.inputLabelLessSpace
+{
+    font-family: verdana, ;  
+    color: #4A719C;  
+    font-size: 10pt;
+	 font-weight: bold;
+	 margin-left: 12px;
+}
+
+.inputLabelLessSpaceTop
+{
+    font-family: verdana, ;  
+    color: #4A719C;  
+    font-size: 10pt;
+	 font-weight: bold;
+	 margin-left: 12px;
+	 vertical-align: top;
+}
+
+.txtBlue {
+	font-weight: bold;
+	color: Blue;
+}
+
+/****Silver changed to black for Demo - Detail popup labels*/
+.txtSilver {
+	font-weight: bold;
+	color: Black;
+}
+
+.txtRed {
+	font-weight: bold;
+	color: Red;
+}
+
+.txtGreen {
+	font-weight: bold;
+	color: Green;
+}
+
+.dotLine {
+	background: White;
+	color: #666666;
+	margin-bottom: 0px;
+	padding-right: 0pt;
+	padding-top: 0px;
+	height: 1px;
+	width: 100%;
+	border-bottom: 1px dashed #25405F;
+}
+
+
+.rptHeaderCenter {
+               font-weight: bold;
+               font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+               font-size: 10t;
+               color: #154c87;
+					margin-left: 5px;
+					margin-right: 5px;
+					text-Align: center;
+}
+
+/*.center
+{ 
+text-align: center;
+}*/
+
+.alignCenter
+{ 
+text-align: center;
+}
+
+.InputLabelTop {
+	font-family: verdana, ;  
+	color: #4A719C;  
+	font-size: 10pt;
+	font-weight: bold;
+	margin-left: 24px;
+	vertical-align: top;
+}
+
+.cellTutor {
+	display: block;
+	vertical-align: top;
+	padding-left: 80%;
+	padding-top: =0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	border-top: 1px #c0c0c0 Solid;
+}
+
+.MoreInfoRowBlock {
+	background-color: #FFFFCC;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+
+.MoreInfoRowBlockBold {
+	background-color: #FFFFCC;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+
+.MIRCategoryClmLeft {
+	background-color: #dee5f0; 
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+
+.MIRtableHeader {
+	background-color:#BBBBBB;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000000;
+	padding-left: 5px;
+	padding-right: 3px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.MIRtable {
+	border: 1px Solid #8EA6C1;
+	background-color: #EFEFED;
+	font-size: 8pt;
+	margin-top: 6px;
+	margin-left : 3px;
+}
+
+.subClmLeftHighlighted {
+	background-color: #FFFFCC;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+
+.subClmRightHighlighted {
+	background-color: #FFFFCC;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+.subTableLeftBold {
+	background-color:  #EBF2FE;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-left : 3px;
+	padding-bottom: 3px;
+	text-align: left;
+}
+
+.unstructHeader {
+    font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+    color: black;  
+    font-size: 12pt;
+	font-weight: bold;
+	margin-left: 3px;
+}
+
+.HeaderCenter {
+               font-weight: bold;
+               font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+               font-size:  small;
+               color: #154c87;
+					margin-left: 5px;
+					margin-right: 5px;
+					text-Align: center;
+}
+
+.divCenter {
+    text-align: center;
+}
+
+/*** Begin TextCloud report***/
+.fontBlue
+{
+    color: DarkBlue;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontGreen
+{
+    color: green;
+}
+
+.fontOrange
+{
+    color: orange;
+}
+
+.fontRed
+{
+    color: red;
+}
+
+.fontPink
+{
+    color: pink;
+}
+
+.fontYellow
+{
+    color: yellow;
+}
+
+.fontBlack
+{
+    color: black;
+}
+
+.fontBlackSmall
+{
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+   font-size: 9pt;
+   color: black;
+	text-Align: left;
+}
+
+.titleMain
+{
+	color: LightSlateGrey;
+	font-size: 24pt;
+	font-weight: bold;
+}
+
+.lgndRightOrange {
+	background-color: Orange;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+.lgndRightGreen {
+	background-color: Green;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+.lgndRightBlue {
+	background-color: DarkBlue;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+.txtRestrictedStateLeft {
+	background-color: Silver;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: left;
+}
+
+.legend
+{
+	color: Black;
+	font-size: 10pt;
+	font-weight: bold;
+}
+/*** End TextCloud report***/
+
+.wikiTitlex  {
+               background: url(../_Images/TitleBgPlain.jpg);
+               color: #FFFFFF;
+               font: bold 11pt Verdana, Arial, Geneva, Helvetica, sans-serif;
+               padding-left: 20px;
+               padding-top: 6px;
+               height: 30px;
+               width: 100%;
+               vertical-align: middle;
+}
+
+.wikiTitle  {
+               background: url(../_Images/TitleBgPlain2.jpg);
+               color: Black;
+               font: bold 11pt Verdana, Arial, Geneva, Helvetica, sans-serif;
+               padding-left: 20px;
+               padding-top: 6px;
+               height: 30px;
+               width: 100%;
+               vertical-align: middle;
+}
+
+.wikiTextxSm  {
+               background: url(../_Images/TitleBgPlain.jpg);
+               color: #FFFFFF;
+               font: bold 11pt Verdana, Arial, Geneva, Helvetica, sans-serif;
+			   font-size: x-small;
+			   color: Black;
+			   padding-left: 20px;
+               padding-top: 6px;
+               height: 30px;
+               width: 100%;
+               vertical-align: middle;
+}
+
+.wikiTextSm  {
+               background: url(../_Images/TitleBgPlain2.jpg);
+               color: AliceBlue;
+               font: bold 11pt Verdana, Arial, Geneva, Helvetica, sans-serif;
+			   font-size: x-small;
+			   font-style: italic;
+			   padding-left: 20px;
+               padding-top: 6px;
+               height: 30px;
+               width: 100%;
+               vertical-align: middle;
+}
+
+.tableInputElements  {
+               border-left-color: Blue;
+			   border-right-color: Blue;
+			   border-bottom-color: Blue;
+			   border-top-color: Blue;
+			   border-top-style: dashed; 
+			   border-right-style: dashed; 
+			   border-left-style: dashed; 
+			   border-bottom-style: dashed; 
+			   background-color: White;
+}
+
+.inputLabel_Blk
+{
+    font-family: verdana, ;  
+    color: Black;  
+    font-size: 8pt;
+	 font-weight: bold;
+	 margin-left: 24px;
+}
+
+.subSumClmRight {
+	background-color: Silver;
+	font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding-top: 3px;
+	padding-right : 3px;
+	padding-bottom: 3px;
+	text-Align: right;
+}
+
+#ticker {  
+  height: 25px;  
+  width: 400px; 
+  overflow: hidden;
+  border: 2px Green Solid;
+  padding: 5px;
+}  
+
+#ticker li {  
+  height: 30px;  
+} 
+
+.HeaderAlignRight {
+vertical-align: top; 
+padding-top: 72px;
+background: #f0803c;
+}
+
+#LeftImg.alignLeft {
+vertical-align: middle;
+}
+
+.LogLabels {
+color: #ffffff;
+}
+
+

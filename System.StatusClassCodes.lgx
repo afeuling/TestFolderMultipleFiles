@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report ID="System.StatusClassCodes" SavedBy="CSBCOLLECTIONS\afeuling" SavedAt="6/3/2015 11:54:36 AM" EngineVersion="11.0.519" SecurityReportRightID="rManager,rReportDevelopers,rCompliance" DefaultShowModes="Web">
+  <DefaultRequestParams DBRNoSourceID="0" ProjectName="'PREVIEW'" />
+  <StyleSheet StyleSheet="CSB.css" />
+  <ReportHeader ShowModes="Web,PDF">
+    <IncludeSharedElement DefinitionFile="Shared.Header" ID="Header" SharedElementID="Header" />
+  </ReportHeader>
+  <Body Class="Main">
+    <Division ID="divReportTitle" ShowModes="Web,PDF">
+      <Label ID="lblReportTitle" Caption="Status Class Codes" Class="title" />
+      <LineBreak LineCount="2" />
+    </Division>
+    <Division ID="divReportTitleExport" ShowModes="Excel">
+      <Rows>
+        <Row Class="titleExport">
+          <Column>
+            <Label ID="lblReportTitle" Caption="Status Class Codes" />
+          </Column>
+        </Row>
+      </Rows>
+    </Division>
+    <Rows>
+      <Row>
+        <Column ID="cellLeftPanel" Class="cellLeftPanel" WidthScale="px" Width="150" ShowModes="Web">
+          <IncludeSharedElement ID="SideMenu" DefinitionFile="Shared.SideMenu" SharedElementID="SideMenu" />
+        </Column>
+        <Column Class="cellRightPanel" ID="cellRightPanel">
+          <Remark>
+            <Rows Width="100" WidthScale="%" IdeDisplayStatus="Collapsed">
+              <Row>
+                <Column ColSpan="2" IdeDisplayStatus="Collapsed">
+                  <Rows>
+                    <Row>
+                      <Column Width="90" WidthScale="%">
+                        <Division ID="divDateRange" ShowModes="Web,PDF">
+                          <InputDate ID="inpDateFrom" DefaultValue="@Request.inpDateFrom~" InputDateReformat="MM/dd/yyyy" CalendarLink="calendar.png" CalendarLinkType="Image" Caption="From Date: " Class="input" CaptionClass="inputLabel" CalendarLinkClass="Calendar" IdeDisplayStatus="Collapsed" />
+                          <InputDate ID="inpDateTo" DefaultValue="@Request.inpDateTo~" InputDateReformat="MM/dd/yyyy" CalendarLink="calendar.png" CalendarLinkType="Image" Caption="To Date: " CaptionClass="inputLabel" Class="input" CalendarLinkClass="Calendar" IdeDisplayStatus="Collapsed" />
+                        </Division>
+                        <Division ID="divDateRangeExcel" ShowModes="Excel">
+                          <Label ID="lblDateRange" Caption="From: @Request.inpDateFrom~   To: @Request.inpDateTo~" />
+                        </Division>
+                        <Division ID="divSubmit" ShowModes="Web">
+                          <Spaces Size="5" />
+                          <Button Caption="Submit" ID="btnSubmit">
+                            <Action Type="Report" ID="actRefreshReport">
+                              <Target Type="Report" Report="Client.CollectionActivity" RequestForwarding="True">
+                                <WaitPage />
+                              </Target>
+                            </Action>
+                          </Button>
+                        </Division>
+                      </Column>
+                      <Column Class="clmRightExport" ShowModes="Web">
+                        <Division ID="divExportButtons" ShowModes="Web">
+                          <Image Caption="ExcelLink.gif" ID="imageExcel" Tooltip="Export To Excel">
+                            <Action Type="NativeExcel" ID="actExportToExcel">
+                              <Target Type="NativeExcel" FrameID="NewWindow" ExportFilename="ClientCallActivity.xls" Report="Client.CollectionActivity" ReportShowModes="Excel" RequestForwarding="True" ShowGridlines="True" />
+                            </Action>
+                          </Image>
+                          <Image Caption="PDFLink.gif" ID="imagePDF" Tooltip="Export To PDF">
+                            <Action Type="PDF" ID="actExportToPDF">
+                              <Target Type="PDF" ID="tgtExportToPDF" ExportFilename="CollectionActivity.pdf" FrameID="NewWindow" ReportShowModes="PDF" Report="Client.CollectionActivity" KeepShowElements="True">
+                                <WaitPage Caption="Please wait while your Report is exported..." />
+                              </Target>
+                            </Action>
+                          </Image>
+                        </Division>
+                      </Column>
+                    </Row>
+                  </Rows>
+                </Column>
+              </Row>
+              <Row ShowModes="Web" IdeDisplayStatus="Collapsed">
+                <Column ColSpan="2">
+                  <InputRadioButtons ID="rbStatus" OptionCaptionColumn="Status" OptionValueColumn="StatusValue" DefaultValue="@Request.rbStatus~" Caption="Client Status:" CaptionClass="inputLabel" RadioButtonDirection="Across" Class="rbBold ">
+                    <DataLayer Type="Static" ID="dlClientStatus">
+                      <StaticDataRow Status="Consolidated     " StatusValue="1" />
+                      <StaticDataRow Status="Individual" StatusValue="2" />
+                    </DataLayer>
+                    <EventHandler DhtmlEvent="onclick">
+                      <Action Type="RefreshElement" ID="actRefreshClientList" ElementID="divClientList,divConsClient" />
+                    </EventHandler>
+                  </InputRadioButtons>
+                  <LineBreak LineCount="2" />
+                </Column>
+              </Row>
+              <Row ShowModes="Web" IdeDisplayStatus="Collapsed">
+                <Column ID="cellInput" Class="cellTop" WidthScale="px" Width="200">
+                  <Division ID="divClientInput" HtmlDiv="True">
+                    <Label ID="lblClientName" Caption="Client Name Like: " Class="inputLabel" />
+                    <InputText ID="txtClientInput" Class="inputtext" />
+                    <LineBreak />
+                    <Button ID="btnSearch" Caption="Search" Class="buttons">
+                      <EventHandler DhtmlEvent="onclick">
+                        <Action Type="RefreshElement" ElementID="divClientList" ID="RefreshClientList1" RequestForwarding="True" IdeDisplayStatus="Collapsed" />
+                      </EventHandler>
+                    </Button>
+                    <Spaces Size="6" />
+                    <Button ID="btnClear" Caption="Clear" Class="buttonssize">
+                      <EventHandler DhtmlEvent="onclick">
+                        <Action Type="RefreshElement" ElementID="divClientInput, divClientList" ID="clearClientList">
+                          <LinkParams txtClientInput="" />
+                        </Action>
+                      </EventHandler>
+                    </Button>
+                  </Division>
+                </Column>
+                <Column ID="cellClientList">
+                  <Division ID="divClientList">
+                    <InputSelectList ID="inpClientList" OptionCaptionColumn="ClientName" OptionValueColumn="ClientNo" Caption="Client Name: " CaptionClass="inputlabel" MultiSelect="True" InputRows="7" Class="alignLeft" DefaultValue="@Request.inpClientList~">
+                      <DataLayer Type="SQL" ID="dlClientList" ConnectionID="CSBDW.SQL" Source="SELECT DISTINCT CLT_NAME_1 + ', ' + CLT_NO as ClientName, CLT_NO as ClientNo FROM fn_ClientList('@Function.UserID~')&#xD;&#xA;@Request.ConsolidatedFilter~&#xD;&#xA;@Request.ClientFilter~&#xD;&#xA;UNION SELECT '--ALL--', 'ALL'&#xD;&#xA;Order by 1" IdeDisplayStatus="Collapsed" />
+                    </InputSelectList>
+                  </Division>
+                </Column>
+              </Row>
+            </Rows>
+          </Remark>
+          <Division ID="divMain">
+            <Division ID="divReportSection" Class="Report">
+              <Rows>
+                <Remark>
+                  <Row IdeDisplayStatus="Collapsed">
+                    <Column>
+                      <InputText>
+                        <Validation Type="Required" ErrorMsg="Required" />
+                      </InputText>
+                      <Button Caption="Submit" ID="btnSubmit">
+                        <EventHandler DhtmlEvent="onclick">
+                          <Action Type="RefreshElement" ID="actRefreshTest" ElementID="divTest" Validate="True" />
+                        </EventHandler>
+                      </Button>
+                      <Division ID="divTest" />
+                    </Column>
+                  </Row>
+                </Remark>
+                <Row>
+                  <Column>
+                    <DataTable SortArrows="True" ID="dtStatusClassCodes" ColumnHeaderClass="tableHeader" Class="table" AjaxPaging="True" CaptionClass="inputLabel">
+                      <DataLayer Type="SQL" ID="dlStatusClassCodes" ConnectionID="CSBDW.SQL" Source="select s.STS_CODE, s.STS_DESC, s.STS_CLASS, c.StatusClassCode, c.StatusClassDescription, s.STS_INC_LETTERS&#xD;&#xA;from sql.tiger.cds.STS s join DimStatusClass c on s.STS_CLASS=c.StatusClassCode&#xD;&#xA;order by c.StatusClassCode, s.STS_DESC" />
+                      <DataTableColumn ID="colSTS_CODE" Header="Status Code" Class="clmLeft">
+                        <Label ID="lblSTS_CODE" Caption="@Data.STS_CODE~" />
+                        <DataColumnSort DataColumn="STS_CODE" />
+                      </DataTableColumn>
+                      <DataTableColumn ID="colSTS_DESC" Header="Status Description" Class="clmLeft">
+                        <Label ID="lblSTS_DESC" Caption="@Data.STS_DESC~" />
+                        <DataColumnSort DataColumn="STS_DESC" />
+                      </DataTableColumn>
+                      <DataTableColumn ID="colSTS_CLASS" Header="Status Class Code" Class="clmLeft">
+                        <Label ID="lblSTS_CLASS" Caption="@Data.STS_CLASS~" />
+                        <DataColumnSort DataColumn="STS_CLASS" />
+                      </DataTableColumn>
+                      <Remark>
+                        <DataTableColumn ID="colStatusClassCode" Header="StatusClassCode" IdeDisplayStatus="Collapsed">
+                          <Label ID="lblStatusClassCode" Caption="@Data.StatusClassCode~" />
+                          <DataColumnSort DataColumn="StatusClassCode" />
+                        </DataTableColumn>
+                      </Remark>
+                      <DataTableColumn ID="colStatusClassDescription" Header="Status Class Description" Class="clmLeft">
+                        <Label ID="lblStatusClassDescription" Caption="@Data.StatusClassDescription~" />
+                        <DataColumnSort DataColumn="StatusClassDescription" />
+                      </DataTableColumn>
+                      <DataTableColumn ID="colSTS_INC_LETTERS" Header="Send Letter" Class="clmLeft" IdeDisplayStatus="Collapsed">
+                        <Label ID="lblSTS_INC_LETTERS" Caption="@Data.STS_INC_LETTERS~" />
+                        <DataColumnSort DataColumn="STS_INC_LETTERS" />
+                      </DataTableColumn>
+                    </DataTable>
+                  </Column>
+                </Row>
+              </Rows>
+            </Division>
+          </Division>
+          <Division ID="Footer">
+            <LineBreak LineCount="2" />
+            <Label Caption="Copyright @ 2015 RevSolve, Inc - Proprietary &amp; Confidential" Class="txtCopyright" />
+          </Division>
+          <Division ID="divPleaseWait" ShowModes="None" IdeDisplayStatus="Collapsed">
+            <Rows>
+              <Row>
+                <Column Width="10" WidthScale="%" />
+                <Column>
+                  <Image Caption="ajax-loader.gif" ID="img_AjaxLoader" />
+                  <Label Caption="Please Wait while the query is running." Class="inputLabel" />
+                </Column>
+                <Column />
+              </Row>
+            </Rows>
+          </Division>
+        </Column>
+      </Row>
+    </Rows>
+  </Body>
+  <ideTestParams inpDateFrom="" inpDateTo="" inpClientList="" rbStatus="" ConsolidatedFilter="" ClientFilter="" />
+</Report>

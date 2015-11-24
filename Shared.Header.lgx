@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="Shared.Header" SavedBy="CSBCOLLECTIONS\afeuling" SavedAt="11/21/2008 5:17:16 PM" EngineVersion="9.1.8">
+  <ReportHeader IdeDisplayStatus="Collapsed" />
+  <SharedElement ID="Header">
+    <Rows Class="HeaderBg" Width="100" WidthScale="%" CellSpacing="0" TableBorder="0" ID="Header" Layout="Auto">
+      <Row>
+        <Column ID="LeftImg" Class="AlignLeft" Width="50" WidthScale="%">
+          <Image Caption="headerLogo.jpg">
+            <Action Type="Report" ID="ActShowHomePage">
+              <Target Type="Report" Report="HomeDashboard_CSB" />
+            </Action>
+          </Image>
+        </Column>
+        <Column ID="RighttImg" Class="AlignRight" Width="50" WidthScale="%">
+          <Image Caption="headerRight.jpg" />
+        </Column>
+      </Row>
+    </Rows>
+  </SharedElement>
+</Report>
